@@ -48,12 +48,13 @@ jobs:
        with: 
          projectPath: ${{ env.PROJECT_PATH }}
          unityVersion: ${{ matrix.unityVersion }}
-         # com.vrchat.base is missing dependency to com.unity.modules.video
+         # com.vrchat.base is missing dependency to com.unity.modules.video, com.unity.test-framework
          # com.unity.xr.oculus (Referenced by com.vrchat.base) is missing dependency to com.unity.modules.androidjni
          # Until https://github.com/bdunderscore/ndmf/pull/655 is merged into stable version, you need to define com.unity.modules.animation dependency explicitly if your package depends on NDMF. 
          packageManifest: |
             {
               "dependencies": {
+                "com.unity.test-framework": "1.4.6",
                 "com.unity.modules.androidjni": "1.0.0",
                 "com.unity.modules.animation": "1.0.0",
                 "com.unity.modules.video": "1.0.0"
