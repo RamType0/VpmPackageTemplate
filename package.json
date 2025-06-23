@@ -1,0 +1,8 @@
+{
+  "name": "com.yourname.example-package",
+  "displayName": "VPM Exxample Package",
+  "version": "0.0.1",
+  "unity": "2022.3",
+  "description": "Example VPM package.",
+  "vrchatVersion": "2022.1.1"
+}
