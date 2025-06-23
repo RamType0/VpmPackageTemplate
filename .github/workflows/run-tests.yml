@@ -42,6 +42,7 @@ jobs:
        testMode:
          - editmode
        vpmPackages:
+         - ['com.vrchat.base']
          - ['com.vrchat.base', 'nadena.dev.ndmf']
            
    steps:
